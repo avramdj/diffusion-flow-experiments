@@ -1,4 +1,11 @@
-# Diffusion experiments
+# Diffusion Flow Experiments
+
+Playground for implementing papers on diffusion models and flow matching.
+
+![image](https://github.com/user-attachments/assets/58db0571-dc33-40d5-a884-621d92066164)
+
+Eventually, I'll move on to more expensive experiments with image, audio and video generation.
+
 
 <details>
   <summary>
@@ -6,6 +13,8 @@
   ## 1. Perturbed Noise Conditioned Score Network</strong>
   
   </summary>
+
+  Paper: [Generative Modeling by Estimating Gradients of the Data Distribution](https://arxiv.org/abs/1907.05600)
 
   [Notebook](https://github.com/avramdj/diffy/blob/main/src/1_perturbed_ncsn.ipynb)
   
@@ -29,6 +38,8 @@
   </summary>
 
   Paper: [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://arxiv.org/abs/2209.03003)
+  
+  Paper: [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)
 
   [Notebook](https://github.com/avramdj/diffy/blob/main/src/2_rectified_flow.ipynb)
   
