@@ -19,3 +19,28 @@
   ![image2](https://github.com/user-attachments/assets/ea38069a-4457-4d7e-8b23-97f1e08f143f)
 
 </details>
+
+
+<details>
+  <summary>
+  
+  ## 2. Rectified Flow</strong>
+  
+  </summary>
+
+  Paper: [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://arxiv.org/abs/2209.03003)
+
+  [Notebook](https://github.com/avramdj/diffy/blob/main/src/2_rectified_flow.ipynb)
+  
+  
+  ### Flow Matching
+  
+  ![image](https://github.com/user-attachments/assets/58db0571-dc33-40d5-a884-621d92066164)
+  
+  ### Rectified Flow with straight trajectories - 2nd reflow iteration
+
+  ![image](https://github.com/user-attachments/assets/89ef9310-7efa-4280-a4b0-acb98508e1a5)
+
+</details>
+
+
