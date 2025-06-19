@@ -2,13 +2,11 @@
 
 Playground for implementing papers on diffusion models and flow matching.
 
-![CFM Loss with ψ](https://latex.codecogs.com/svg.image?\dpi{200}\bg_white%20\displaystyle%20\mathcal{L}_{\mathrm{CFM}}(\theta)%20=%20\mathbb{E}_{t,%20q(x_1),%20p(x_0)}%20\big\lVert%20v_t(\psi_t(x_0))%20-%20\frac{d}{dt}\psi_t(x_0)\big\rVert^2)
+`L_CFM(θ) = E_{t, q(x1), p(x0)} ‖ v_t(ψ_t(x0)) - (d/dt) ψ_t(x0) ‖²`
 
+<img src="https://github.com/user-attachments/assets/58db0571-dc33-40d5-a884-621d92066164" width="450"/>
 
-![image](https://github.com/user-attachments/assets/58db0571-dc33-40d5-a884-621d92066164)
-
-Eventually, I'll move on to more expensive experiments with image, audio and video generation.
-
+Eventually, I'll move on to more (expensive) experiments with image, audio and video generation.
 
 <details>
   <summary>
