@@ -186,8 +186,6 @@ class DiT(nn.Module):
         torch.nn.init.zeros_(self.final_proj.weight)
         torch.nn.init.zeros_(self.final_proj.bias)
 
-    # --------------------------------------------------------------------------
-    # sine-cosine positional embeddings
     def get_2d_sincos_pos_embed(self, embed_dim, grid_size, cls_token=False):
         grid_h = np.arange(grid_size, dtype=np.float32)
         grid_w = np.arange(grid_size, dtype=np.float32)
