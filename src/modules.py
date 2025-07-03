@@ -116,6 +116,9 @@ class DiTBlockWithCrossAttention(nn.Module):
         return x
 
 
+class TimestepEmbedding(nn.Module):
+    pass
+
 class DiTBlockWithAdaLN(nn.Module):
     def __init__(self, d_model: int, n_heads: int, cond_dim: int):
         super().__init__()
