@@ -18,6 +18,7 @@ dependencies = [
     "seaborn>=0.13.2",
     "torch>=2.7.1",
     "torchdiffeq>=0.2.5",
+    "torchmetrics[image]>=1.7.3",
     "torchvision>=0.22.1",
     "tqdm>=4.67.1",
 ]
