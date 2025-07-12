@@ -205,6 +205,7 @@ dependencies = [
     { name = "ipykernel" },
     { name = "ipywidgets" },
     { name = "jaxtyping" },
+    { name = "lovely-tensors" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "scikit-learn" },
@@ -225,6 +226,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
     { name = "jaxtyping", specifier = ">=0.3.2" },
+    { name = "lovely-tensors", specifier = ">=0.1.18" },
     { name = "matplotlib", specifier = ">=3.10.3" },
     { name = "numpy", specifier = ">=2.3.0" },
     { name = "scikit-learn", specifier = ">=1.7.0" },
@@ -252,6 +254,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/91/50/a9d80c47ff289c611ff12e63f7c5d13942c65d68125160cefd768c73e6e4/executing-2.2.0.tar.gz", hash = "sha256:5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755", size = 978693, upload-time = "2025-01-22T15:41:29.403Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7b/8f/c4d9bafc34ad7ad5d8dc16dd1347ee0e507a52c3adb6bfa8887e1c6a26ba/executing-2.2.0-py2.py3-none-any.whl", hash = "sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa", size = 26702, upload-time = "2025-01-22T15:41:25.929Z" },
+]
+
+[[package]]
+name = "fastcore"
+version = "1.8.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/eb/a8/c3d0a2684efb94d0149eec9781db317e414dd4cfe8667afb31a2f638ab7f/fastcore-1.8.5.tar.gz", hash = "sha256:5b6549f44f8df2d81ec378885c17a6a706a02bb40e38f14f6b44f5296180b76d", size = 76516, upload-time = "2025-07-08T06:17:38.135Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7b/0a/a572b458862649a67511977ef5b744d0e856d94e12fe47e860428755d7fc/fastcore-1.8.5-py3-none-any.whl", hash = "sha256:84b0301691926a2fd2ea45f0cc66a0fbb4b531244d2995cf69e67db75b4a40f6", size = 79259, upload-time = "2025-07-08T06:17:36.175Z" },
 ]
 
 [[package]]
@@ -570,6 +584,34 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/0f/bb/63a6a8c9e7a96b6ba92647fa5b1595c2dbee29f8178705adb4704d82ecba/lightning_utilities-0.14.3.tar.gz", hash = "sha256:37e2f83f273890052955a44054382c211a303012ee577619efbaa5df9e65e9f5", size = 30346, upload-time = "2025-04-03T15:59:56.928Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1a/c1/31b3184cba7b257a4a3b5ca5b88b9204ccb7aa02fe3c992280899293ed54/lightning_utilities-0.14.3-py3-none-any.whl", hash = "sha256:4ab9066aa36cd7b93a05713808901909e96cc3f187ea6fd3052b2fd91313b468", size = 28894, upload-time = "2025-04-03T15:59:55.658Z" },
+]
+
+[[package]]
+name = "lovely-numpy"
+version = "0.2.13"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fastcore" },
+    { name = "ipython" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f7/46/ba51024fbf97d8370afa8a764fe18bf5c663e64badf129dfb2949a7ccbdd/lovely_numpy-0.2.13.tar.gz", hash = "sha256:0ed56660986731db3d3d7ff130e85e8d162e96c96042a0bd9a3992d32a3b34e2", size = 23920, upload-time = "2024-06-28T06:37:27.63Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/92/f7/a74742c9f9823a6a1fb18eb11fe77da61ea9426770ede6406f2f97a9622a/lovely_numpy-0.2.13-py3-none-any.whl", hash = "sha256:2e696d145d301264390f790cd602560ca5e525534d9059e0fcd3f313b63b5786", size = 24357, upload-time = "2024-06-28T06:37:25.206Z" },
+]
+
+[[package]]
+name = "lovely-tensors"
+version = "0.1.18"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "lovely-numpy" },
+    { name = "torch" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/20/c4/b109b6c912929a471cf03c6a2f02d8c5ab2889ec57177692d7b971c4ec70/lovely_tensors-0.1.18.tar.gz", hash = "sha256:afb07d52de9ec6e560e77d9b3e01758bbc921a6f25c661b1c51ebbb3f75ee0c5", size = 21962, upload-time = "2024-11-20T22:00:29.209Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/71/fb/688604e72694c597cf236e5ccd9a4bcc34bacc5f8e5dbb2cf7d7ddccb25b/lovely_tensors-0.1.18-py3-none-any.whl", hash = "sha256:91dc30f0d6224364851e6f14497e1677076cd3a59bae4d92c78bbe8684f6f22b", size = 19303, upload-time = "2024-11-20T22:00:27.147Z" },
 ]
 
 [[package]]
